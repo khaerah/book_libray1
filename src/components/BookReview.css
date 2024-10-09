@@ -1,0 +1,60 @@
+.grid-container {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.start {
+    flex: 0 1 calc(50% - 20px); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    width: 10px;
+    border-radius: 10px; 
+    padding: 10px;
+    margin-bottom: 20px; 
+}
+
+.grid-item {
+    margin: 5px 0; 
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-textarea {
+    resize: none; 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+.submit-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* width: 100px; */
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #5d5b5b; 
+}
+
+
+.error{
+    color: red;
+}
