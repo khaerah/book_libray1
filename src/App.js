@@ -3,9 +3,9 @@ import BookList from './components/BookList';
 import BookSearch from './components/BookSearch';
 import NavBar from './components/Navbar';
 import FeaturedBooks from './components/FeaturedBooks';
-import axios from 'axios'; 
 import './components/HomePage.css';
 import './components/Navbar.css';
+import { json } from 'react-router';
 
 function App() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -21,7 +21,7 @@ function App() {
         // Fetch books from API
         const fetchBooks = async () => {
             try {
-                const response = await axios.get('https://gutendex.com/books/');
+                const response = await json.get('https://gutendex.com/books/');
                 console.log(response.data); 
                 if (Array.isArray(response.data.results)) {
                     setFeaturedBooks(response.data.results);
