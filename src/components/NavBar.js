@@ -1,8 +1,6 @@
-// NavBar.js
 import React, { useState } from 'react';
-import './NavBar.css'; // Import CSS for styling
+import './Navbar.css'; 
 
-<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet"></link>
 
 const NavBar = ({ toggleFeaturedBooks }) => {
     const [isOpen, setIsOpen] = useState(false);

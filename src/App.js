@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import BookList from './components/BookList';
 import BookSearch from './components/BookSearch';
-import NavBar from './components/NavBar';
+import NavBar from './components/Navbar';
 import FeaturedBooks from './components/FeaturedBooks';
 import axios from 'axios'; 
 import './components/HomePage.css';
-import './components/NavBar.css';
+import './components/Navbar.css';
 
 function App() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -39,7 +39,7 @@ function App() {
     return (
         <div className="App">
             <NavBar toggleFeaturedBooks={toggleFeaturedBooks} />
-            <header className="App-header">
+            <div className="App-header">
                 <h1 className='find'>Find Your Next Favorite Book Today!</h1>
                 <p className='book'>Books are magic portals, transporting us to new worlds and igniting our imaginations.</p>
                 <BookSearch
@@ -48,7 +48,7 @@ function App() {
                     error={error}
                 />
                 {error && <p className="error">{error}</p>}
-            </header>
+            </div>
 
             <main>
                 {showFeatured && <FeaturedBooks books={featuredBooks} />}

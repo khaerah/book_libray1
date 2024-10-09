@@ -1,5 +1,5 @@
 import React from 'react';
-import './BookSearch.css'; // Import the CSS for the search bar
+import './BookSearch.css'; 
 
 const BookSearch = ({ searchTerm, setSearchTerm, error }) => {
     return (
