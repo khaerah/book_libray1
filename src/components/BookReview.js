@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import './BookReview.css'; // Import CSS for styling
+import './BookReview.css';
 
 
 const BookReview = ({ bookId, onSubmit }) => {
@@ -9,11 +9,11 @@ const BookReview = ({ bookId, onSubmit }) => {
     const handleReviewSubmit = (data) => {
         console.log('Review submitted for book ID:', bookId, data);
         if (onSubmit && typeof onSubmit === 'function') {
-            onSubmit(data.review); // Call the onSubmit function passed from BookList
+            onSubmit(data.review);
         } else {
             console.error("onSubmit is not a function");
         }
-        reset(); // Reset the form
+        reset();
     };
 
     return (

@@ -1,6 +1,5 @@
-// FeaturedBooks.js
 import React from 'react';
-import './FeaturedBooks.css'; // Make sure to import your CSS
+import './FeaturedBooks.css';
 
 const FeaturedBooks = ({ books }) => {
     if (!Array.isArray(books) || books.length === 0) {
