@@ -28,7 +28,7 @@ function App() {
                     setError('No featured books found.');
                 }
             } catch (err) {
-                setError('Failed to fetch books.');
+                setError('');
             }
         };
 
