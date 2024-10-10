@@ -15,13 +15,10 @@
 }
 
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     .App-nav li {
         display: block;
-        /* Stack navigation items vertically */
         margin: 10px 0;
-        /* Add margin between items */
     }
 
     .App-nav {
@@ -44,23 +41,19 @@
 
     main {
         padding: 10px;
-        /* Reduce main content padding */
     }
 }
 
 @media (max-width: 480px) {
     .App-header h1 {
         font-size: 1.5em;
-        /* Adjust font size for smaller screens */
     }
 
     .App-nav {
         padding: 5px;
-        /* Reduce nav padding */
     }
 
     .App-nav li {
         margin: 5px 0;
-        /* Further reduce margin for small screens */
     }
 }
